@@ -1,0 +1,203 @@
+/* Base Styles and Typography */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+html,
+body,
+[class*="css"],
+.stApp {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+}
+
+/* Primary Button Styling */
+div.stButton>button[kind="primary"] {
+    background: linear-gradient(135deg, #1f2937 0%, #000000 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+div.stButton>button[kind="primary"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+    background: linear-gradient(135deg, #000000 0%, #1f2937 100%);
+    color: white;
+    border: none;
+}
+
+/* Secondary Button Styling */
+div.stButton>button[kind="secondary"] {
+    background-color: white;
+    color: #4a5568;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+div.stButton>button[kind="secondary"]:hover {
+    border-color: #000000;
+    color: #000000;
+    background-color: #f7fafc;
+}
+
+/* Card Styles */
+.custom-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border: 1px solid #f0f4f8;
+    transition: transform 0.2s ease-in-out;
+}
+
+.custom-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.card-title {
+    color: #2d3748;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #f3f4f6;
+    padding-bottom: 0.5rem;
+}
+
+.card-text {
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+/* Dashboard Metric Cards */
+.metric-card {
+    background: linear-gradient(135deg, #f6f8fb 0%, #e5ebf4 100%);
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    border-left: 4px solid #000000;
+}
+
+.metric-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.metric-label {
+    font-size: 0.875rem;
+    color: #718096;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+
+/* Info Badges */
+.badge {
+    display: inline-block;
+    padding: 0.25em 0.6em;
+    font-size: 75%;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 9999px;
+    background-color: #f3f4f6;
+    color: #111827;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Hero Section */
+.hero-container {
+    text-align: center;
+    padding: 2.5rem 2rem;
+    max-width: 800px;
+    margin: 0 auto 2.5rem auto;
+    background-color: #ffffff;
+    border: 1px solid #edf2f7;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: -webkit-linear-gradient(135deg, #111827, #000000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: #4a5568;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    line-height: 1.6;
+}
+
+/* Form Container Sizing */
+[data-testid="stForm"] {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+/* Streamlit specific overrides */
+[data-testid="stSidebar"] {
+    background-color: #f8fafc;
+    border-right: 1px solid #e2e8f0;
+}
+
+/* Hide streamlit menu and footer */
+#MainMenu {
+    visibility: hidden;
+}
+
+footer {
+    visibility: hidden;
+}
+
+/* Back button styling */
+div.stButton>button[key*="back_"] {
+    position: fixed;
+    top: 0.5rem;
+    left: 1rem;
+    z-index: 1000;
+    padding: 0.2rem 0.6rem;
+    font-size: 1.2rem;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.block-container {
+    padding-top: 3.5rem !important;
+}
+
+.stDeployButton {
+    display: none !important;
+}
+
+[data-testid="stHeader"] {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+[data-testid="stSidebarCollapsedControl"] {
+    display: block !important;
+}
