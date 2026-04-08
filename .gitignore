@@ -1,0 +1,64 @@
+# 🔐 Environment variables
+.env
+.env.*
+*.env
+
+# 🧠 API Keys / Secrets
+*.key
+*.pem
+secrets.json
+
+# 🐍 Python cache & compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 🧪 Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# 📦 Python packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# 🧾 Logs & databases
+*.log
+*.sqlite3
+*.db
+
+# 🖥️ IDE / Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 🪟 OS files
+.DS_Store
+Thumbs.db
+
+# 📊 Streamlit specific
+.streamlit/secrets.toml
+
+# 🧪 Testing
+.coverage
+.pytest_cache/
+
+# 📁 Temporary files
+tmp/
+temp/
+
+# 📦 Node modules (if used later)
+node_modules/
+
+# 📄 Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# 🔄 GitHub / CI
+.github/
+
+# 📁 Uploads (if your app stores user files)
+uploads/
