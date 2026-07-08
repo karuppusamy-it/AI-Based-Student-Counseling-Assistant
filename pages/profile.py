@@ -83,7 +83,7 @@ hr { border-color: rgba(255,255,255,0.15) !important; }
 .stAlert { border-radius: 10px !important; }
 </style>
 """, unsafe_allow_html=True)
-
+                             
 if 'logged_in' not in st.session_state or not st.session_state['logged_in']:
     st.warning("Please log in to view your profile.")
     st.switch_page("pages/login.py")
